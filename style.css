@@ -3,7 +3,7 @@ body{
     padding: 0;
     margin: 0;
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(68,199,103,1) 0%, rgba(104,69,199,1) 100%)
+    background: linear-gradient(90deg, rgba(68,199,103,1) 0%, rgba(104,69,199,1) 100%)
 }
 .funfact{
     opacity: 0%;
@@ -26,19 +26,30 @@ background: linear-gradient(90deg, rgba(68,199,103,1) 0%, rgba(104,69,199,1) 100
 	font-family:Verdana;
 	font-size:28px;
 	font-weight:bold;
-	padding:19px 31px;
-	text-decoration:none;  
+	padding:19px 31px; 
     position: relative;
     top: 200px;
     left: 40px;  
+    z-index: 1;
 }
 .EduBtn:hover {
     background:linear-gradient(to bottom, #4fd904 5%, #44c767 100%);
 	background-color:#4fd904;
 }
 .portfolio__overlay1{
-    opacity: 0%;
-    transition: opacity 550ms;
+    width: 100%;
+    height: 1879px;
+    border-radius: 43% 0% 0% 25% / 40% 25% 25% 0%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.09427521008403361) 0%, rgba(255,255,255,0) 22%, rgba(68,199,103,1) 35%);
+    z-index: 2;
+    position:fixed;
+    opacity: 100%;
+    /*opacity: 0%;
+    transition: opacity 550ms;*/
 }
 .EduBtn:hover +.portfolio__overlay1 {
     width: 100%;
@@ -66,10 +77,10 @@ background: linear-gradient(90deg, rgba(68,199,103,1) 0%, rgba(104,69,199,1) 100
     font-size:28px;
     font-weight:bold;
     padding:19px 31px;
-    text-decoration:none;
     position: relative;
     top: 48px;
-    left:1685px
+    left: 1687px;
+    z-index: 1;
 }
 .WorkBtn:hover {
     background:linear-gradient(to bottom, #3e04db 5%, #6845c7 100%);
@@ -80,20 +91,107 @@ background: linear-gradient(90deg, rgba(68,199,103,1) 0%, rgba(104,69,199,1) 100
     transition: opacity 550ms;
 }
 .WorkBtn:hover +.portfolio__overlay2 {
-    width: 100%;
+    width: 99.9%;
     height: 1879px;
     border-radius: 0% 25% 0% 25% / 40% 40% 25% 0%;
     border-style: solid;
     border-width: 1px;
     border-color: white;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.09427521008403361) 0%, rgba(255,255,255,0) 22%, rgba(68,199,103,1) 35%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.09427521008403361) 0%, rgba(255,255,255,0) 22%, rgba(62,4,219,1) 92%);
     z-index: 2;
-    position:fixed;
+    position: fixed;
     opacity: 100%;
 }
 .EduBorder{
-    opacity: 0%;
+    z-index: 2;
+    left: 500px;
+    position: relative;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    border: 2px solid #b78846;
+    text-align: center;
+    }
+    .EduBorder:before, .EduBorder:after {
+        position: relative;
+        width: 14px;
+        height: 14px;
+        font-size: 14px;
+        color: #b78846;
+        border: 2px solid #b78846;
+        line-height: 12px;
+        top: 5px;
+        text-align: center;
+      }
+      .EduBorder .EduBorder-inner {
+        position: relative;
+        border: 2px solid #b78846;
+        padding: 40px;
+      }
+      .EduBorder .EduBorder-inner:before, .EduBorder .EduBorder-inner:after {
+        position: relative;
+        width: 14px;
+        height: 14px;
+        font-size: 14px;
+        color: #b78846;
+        border: 2px solid #b78846;
+        line-height: 12px;
+        bottom: -2px;
+        text-align: center;
+      }
+.EduBorder#school1{
+    left: 320px;
+    top: 406px;
+}
+#img1{
+    max-width:300px; 
+    max-height:300px;
+     position: relative;
+     left: 168px;
+     top: 347px;
+}
+.EduBorder#school2{
+    left: 745px;
+    top:-67px;
+}
+#img2{
+    max-width:300px; 
+    max-height:300px; 
+    position:relative;
+    left: 596px;
+    top: -122px;
+    z-index: 2;
+}
+.EduBorder#school3{
+    left: 1202px;
+    top: -530px;
+}
+#img3{
+    max-width:300px; 
+    max-height:300px; 
+    position: relative;
+    bottom: 583px;
+    left: 1052px;
+    z-index: 2;
+}
+.EduBorder#school4{
+    left: 1672px;
+    top: -896px;
+}
+.fa-solid.fa-arrow-turn-down#arrow1{
+    top: 0;
+    left: 0;
+}
+.fa-solidfa-arrow-turn-down.fa-arrow-turn-down#arrow2{
+    top: 0;
+    left: 0;
+}
+.fa-solid.fa-arrow-turn-down#arrow3{
+    top: 0;
+    left: 0;
 }
 .WorkBorder{
     opacity: 0%;
