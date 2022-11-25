@@ -137,21 +137,25 @@ body{
         bottom: -2px;
         text-align: center;
       }
-.EduBorder#school1{
-    left: 320px;
-    top: 406px;
-}
-#img1{
-    max-width:300px; 
+      #img1{
+          max-width:300px; 
     max-height:300px;
      position: relative;
      left: 168px;
      top: 347px;
-     opacity: 0%;
+     opacity: 0;
 }
-.EduBorder#school2{
-    left: 745px;
-    top:-67px;
+.EduBorder#school1{
+    left: 320px;
+    top: 406px;
+}
+.EduBtn:hover~img#img1{
+    opacity:1;
+    transition: opacity 3s;
+}
+.EduBtn:hover~div#school1{
+    opacity:1;
+    transition: opacity 3s;
 }
 #img2{
     max-width:300px; 
@@ -160,11 +164,19 @@ body{
     left: 596px;
     top: -122px;
     z-index: 2;
-    opacity: 0%;
+    opacity: 0;
 }
-.EduBorder#school3{
-    left: 1202px;
-    top: -530px;
+.EduBorder#school2{
+    left: 745px;
+    top:-67px;
+}
+.EduBtn:hover~img#img2{
+    opacity: 1;
+    transition: 3s 0.8s ease;
+}
+.EduBtn:hover~div#school2{
+    opacity:1;
+    transition: 3s 0.8s ease;
 }
 #img3{
     max-width:300px; 
@@ -173,14 +185,21 @@ body{
     bottom: 583px;
     left: 1052px;
     z-index: 2;
-    opacity: 0%;
-}
-.EduBorder#school4{
-    left: 1672px;
-    top: -896px;
-    
+    opacity: 0;
 }
 
+.EduBorder#school3{
+    left: 1202px;
+    top: -530px;
+}
+.EduBtn:hover~img#img3{
+    opacity: 1;
+    transition: 3s 1.3s ease;
+}
+.EduBtn:hover~div#school3{
+    opacity:1;
+    transition: 3s 1.3s ease;
+}
 #img4{
     max-width: 300px;
     max-height: 250px;
@@ -188,32 +207,61 @@ body{
     z-index: 2;
     top: -947px;
     left: 1523px;
-    opacity: 0%;
+    opacity: 0;
+}
+.EduBorder#school4{
+    left: 1672px;
+    top: -896px;
+}
+.EduBtn:hover~img#img4{
+    opacity: 1;
+    transition: 3s 1.8s ease;
+}
+.EduBtn:hover~div#school4{
+    opacity:1;
+    transition: 3s 1.8s ease;
 }
 #photo{
     max-width: 250px;
     max-height: 300px;
 }
-.EduBtn:hover img#img1{
-    opacity:100%;
-    transition: opacity 4ms;
+#photo:hover{
+    
+    transform: scale(1.6);
+    box-shadow:2px 2px rgba(0, 0, 0, 0.5);
+    transition: transform 500ms box-shadow;
 }
-.EduBtn img#img2{
-    opacity: 100%;
-    transition: opacity 3ms ;
+.arrow #arrow1{
+    top: 308px;
+    left: 474px;
+    position: relative;
+    opacity: 0;
 }
-.EduBtn img#img3{
-    opacity: 100%;
-    transition: opacity 3ms ;
+.EduBtn:hover~div i#arrow1{
+    opacity:1;
+    transition: 3s 0.25s ease;
 }
-.EduBtn img#img4{
-    opacity: 100%;
-    transition: opacity 3ms ;
+.arrow #arrow2{
+    top: -162px;
+    left: 899px;
+    position: relative;
+    opacity: 0;
 }
-#arrow1, #arrow2, #arrow3{
-    top: 0;
-    left: 0;
-    opacity: 0%;
+.EduBtn:hover~div i#arrow2{
+    opacity:1;
+    transition: 3s 1.15s ease;
+    z-index: 2;
+}
+.arrow #arrow3{
+    top: -617px;
+    left: 1355px;
+    position: relative;
+    opacity:0;
+}
+.EduBtn:hover~div i#arrow3{
+    opacity:1;
+    transition: 3s 1.75s ease;
+    z-index: 2;
 }
 .WorkBorder{
     opacity: 0%;
