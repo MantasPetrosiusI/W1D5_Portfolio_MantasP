@@ -37,19 +37,9 @@ body{
 	background-color:#4fd904;
 }
 .portfolio__overlay1{
-    width: 100%;
-    height: 1879px;
-    border-radius: 43% 0% 0% 25% / 40% 25% 25% 0%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.09427521008403361) 0%, rgba(255,255,255,0) 22%, rgba(68,199,103,1) 35%);
-    z-index: 2;
-    position:fixed;
-    opacity: 100%;
-    /*opacity: 0%;
-    transition: opacity 550ms;*/
+
+    opacity: 0%;
+    transition: opacity 550ms;
 }
 .EduBtn:hover +.portfolio__overlay1 {
     width: 100%;
@@ -114,6 +104,11 @@ body{
     padding: 5px;
     border: 2px solid #b78846;
     text-align: center;
+    opacity: 0%;
+    }
+    .EduBtn:hover .EduBorder{
+        opacity: 100%;
+        transition: opacity 3s;
     }
     .EduBorder:before, .EduBorder:after {
         position: relative;
@@ -152,6 +147,7 @@ body{
      position: relative;
      left: 168px;
      top: 347px;
+     opacity: 0%;
 }
 .EduBorder#school2{
     left: 745px;
@@ -164,6 +160,7 @@ body{
     left: 596px;
     top: -122px;
     z-index: 2;
+    opacity: 0%;
 }
 .EduBorder#school3{
     left: 1202px;
@@ -176,22 +173,47 @@ body{
     bottom: 583px;
     left: 1052px;
     z-index: 2;
+    opacity: 0%;
 }
 .EduBorder#school4{
     left: 1672px;
     top: -896px;
+    
 }
-.fa-solid.fa-arrow-turn-down#arrow1{
+
+#img4{
+    max-width: 300px;
+    max-height: 250px;
+    position: relative;
+    z-index: 2;
+    top: -947px;
+    left: 1523px;
+    opacity: 0%;
+}
+#photo{
+    max-width: 250px;
+    max-height: 300px;
+}
+.EduBtn:hover img#img1{
+    opacity:100%;
+    transition: opacity 4ms;
+}
+.EduBtn img#img2{
+    opacity: 100%;
+    transition: opacity 3ms ;
+}
+.EduBtn img#img3{
+    opacity: 100%;
+    transition: opacity 3ms ;
+}
+.EduBtn img#img4{
+    opacity: 100%;
+    transition: opacity 3ms ;
+}
+#arrow1, #arrow2, #arrow3{
     top: 0;
     left: 0;
-}
-.fa-solidfa-arrow-turn-down.fa-arrow-turn-down#arrow2{
-    top: 0;
-    left: 0;
-}
-.fa-solid.fa-arrow-turn-down#arrow3{
-    top: 0;
-    left: 0;
+    opacity: 0%;
 }
 .WorkBorder{
     opacity: 0%;
