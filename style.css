@@ -1,6 +1,8 @@
 body{
     padding: 0;
     margin: 0;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(68,199,103,1) 0%, rgba(104,69,199,1) 100%)
 }
 .funfact{
     opacity: 0%;
@@ -11,6 +13,54 @@ body{
     text-align: center;
     overflow-wrap:break-word;
     inline-size: 350px;
+}
+.EduBtn{
+    background:linear-gradient(to bottom, #44c767 5%, #4fd904 100%);
+	background-color:#44c767;
+	border-radius:25px;
+	border:4px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:28px;
+	font-weight:bold;
+	padding:19px 31px;
+	text-decoration:none;  
+    position: relative;
+    top: 311px;
+    left: 40px;  
+}
+.EduBtn:hover {
+    background:linear-gradient(to bottom, #4fd904 5%, #44c767 100%);
+	background-color:#4fd904;
+}
+.choices .portfolio__overlay1 .EduBtn:hover{
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+}
+
+.WorkBtn {
+    background:linear-gradient(to bottom, #6845c7 5%, #3e04db 100%);
+    background-color:#6845c7;
+    border-radius:25px;
+    border:4px solid #4019ab;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Verdana;
+    font-size:28px;
+    font-weight:bold;
+    padding:19px 31px;
+    text-decoration:none;
+    position: relative;
+    top: 159px;
+    left:1685px
+}
+.WorkBtn:hover {
+    background:linear-gradient(to bottom, #3e04db 5%, #6845c7 100%);
+    background-color:#3e04db;
 }
 .EduBorder{
     opacity: 0%;
