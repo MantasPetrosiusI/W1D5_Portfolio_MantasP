@@ -2,6 +2,7 @@ body{
     user-select: none;
     padding: 0;
     margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(68,199,103,1) 0%, rgba(104,69,199,1) 100%)
 }
@@ -157,6 +158,20 @@ body{
     opacity:1;
     transition: opacity 3s;
 }
+div p#PJZG{
+    width: 300px;
+    position: fixed;
+    top: 805px;
+    left: 165px;
+    opacity: 0;
+    border-radius: 38px 0px 40px 0px;
+    outline: 8px dashed #41B303;
+    outline-offset: 25px;
+}
+.EduBtn:hover~div #PJZG{
+    opacity:1;
+    transition: opacity 3s;
+}
 #img2{
     max-width:300px; 
     max-height:300px; 
@@ -226,9 +241,14 @@ body{
     max-height: 300px;
 }
 #photo:hover{
-    
-    transform: scale(1.6);
-    box-shadow:2px 2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 470px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(4);
+    box-shadow: 0px 0 3px 2px rgb(0 0 0 / 50%);
     transition: transform 500ms box-shadow;
 }
 .arrow #arrow1{
@@ -240,6 +260,7 @@ body{
 .EduBtn:hover~div i#arrow1{
     opacity:1;
     transition: 3s 0.25s ease;
+    z-index: 2;
 }
 .arrow #arrow2{
     top: -162px;
