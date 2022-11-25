@@ -164,13 +164,14 @@ div p#PJZG{
     top: 805px;
     left: 165px;
     opacity: 0;
-    border-radius: 38px 0px 40px 0px;
-    outline: 8px dashed #41B303;
+    border-radius: 40px 0px 40px 0px;
+    outline: 8px dashed crimson;
     outline-offset: 25px;
 }
 .EduBtn:hover~div #PJZG{
     opacity:1;
     transition: opacity 3s;
+    z-index: 2;
 }
 #img2{
     max-width:300px; 
@@ -192,6 +193,21 @@ div p#PJZG{
 .EduBtn:hover~div#school2{
     opacity:1;
     transition: 3s 0.8s ease;
+}
+div p#DIFE{
+    width: 300px;
+    position: fixed;
+    top: 707px;
+    left: 592px;
+    opacity: 0;
+    border-radius: 40px 0px 40px 0px;
+    outline: 8px dashed crimson;
+    outline-offset: 25px;
+}
+.EduBtn:hover~div #DIFE{
+    opacity:1;
+    transition: 3s 0.8s ease;
+    z-index: 2;
 }
 #img3{
     max-width:300px; 
@@ -215,6 +231,21 @@ div p#PJZG{
     opacity:1;
     transition: 3s 1.3s ease;
 }
+div p#DKIT{
+    width: 300px;
+    position: fixed;
+    top: 578px;
+    left: 1050px;
+    opacity: 0;
+    border-radius: 40px 0px 40px 0px;
+    outline: 8px dashed crimson;
+    outline-offset: 25px;
+}
+.EduBtn:hover~div #DKIT{
+    opacity:1;
+    transition: 3s 1.3s ease;
+    z-index: 2;
+}
 #img4{
     max-width: 300px;
     max-height: 250px;
@@ -235,6 +266,21 @@ div p#PJZG{
 .EduBtn:hover~div#school4{
     opacity:1;
     transition: 3s 1.8s ease;
+}
+div p#EPICODE{
+    width: 300px;
+    position: fixed;
+    top: 500px;
+    left: 1518px;
+    opacity: 0;
+    border-radius: 40px 0px 40px 0px;
+    outline: 8px dashed crimson;
+    outline-offset: 25px;
+}
+.EduBtn:hover~div #EPICODE{
+    opacity:1;
+    transition: 3s 1.8s ease;
+    z-index: 2;
 }
 #photo{
     max-width: 250px;
